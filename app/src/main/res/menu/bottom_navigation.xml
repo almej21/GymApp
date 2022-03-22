@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_upper_body"
+        android:icon="@drawable/dumbbell_icon"
+        android:title="UPPER BODY"/>
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="HOME"/>
+    <item
+        android:id="@+id/nav_lower_body"
+        android:icon="@drawable/dumbbell_icon"
+        android:title="LOWER BODY"/>
+
+</menu>

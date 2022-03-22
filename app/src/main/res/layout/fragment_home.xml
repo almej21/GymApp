@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_video">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="@string/home"
+        android:textColor="@color/Red"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/your_next_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_next_workout"
+        android:textColor="@color/Red"
+        android:textSize="23sp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/icon_switch"
+        android:layout_marginTop="366dp"
+        android:scaleY="0.35"
+        android:scaleX="0.35"
+        app:track="@drawable/track"
+        android:thumb="@drawable/thumb"/>
+
+    <TextView
+        android:id="@+id/a_drills"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center_horizontal"
+        android:text="@string/a_drills"
+        android:textColor="@color/White"
+        android:textSize="22sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/b_drills"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="420dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center_horizontal"
+        android:text="@string/b_drills"
+        android:textColor="@color/White"
+        android:textColorHighlight="@color/Red"
+        android:textSize="22sp"
+        tools:ignore="RtlHardcoded" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/icon_switch"
+        android:paddingTop="1dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/jiren_home_page2"
+        android:contentDescription="@string/jiren" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/my_info_button"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/your_next_workout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/muscle_button_background"
+        android:textColor="@color/White"
+        android:layout_marginStart="138dp"
+        android:layout_marginBottom="-345dp"
+        android:text="@string/my_info" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/home"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile_picture"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+</RelativeLayout>

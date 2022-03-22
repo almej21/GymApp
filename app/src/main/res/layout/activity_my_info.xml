@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyInfoActivity"
+    android:background="@color/Black"
+    android:layout_centerHorizontal="true"
+    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/goBack_btn"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:background="@drawable/muscle_button_background"
+            android:textColor="@color/White"
+            android:text="@string/back"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/backwards_btn_icon"
+            android:paddingRight="16dp"
+            android:fontFamily="@font/alfa_slab_one"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/height_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
+        android:text="@string/height"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/height_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp"
+        android:layout_toRightOf="@+id/height_text"
+        android:text="@string/user_height"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/White"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="295dp"
+        android:text="@string/weight"
+        android:textSize="25sp"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/weight_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="295dp"
+        android:layout_toRightOf="@+id/weight_text"
+        android:text="@string/user_weight"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="115dp"
+        android:textColor="@color/White"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="330dp"
+        android:text="@string/age"
+        android:textSize="25sp"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/age_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="330dp"
+        android:layout_toRightOf="@+id/age_text"
+        android:text="@string/user_age"
+        android:textColor="@color/White"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/change_info_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/age_textview"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/White"
+        android:background="@drawable/muscle_button_background"
+        android:drawableRight="@drawable/edit_info_btn_icon"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/change_info_button" />
+
+</RelativeLayout>

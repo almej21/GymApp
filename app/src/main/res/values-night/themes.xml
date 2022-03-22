@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GymApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Red</item>
+        <item name="colorPrimaryVariant">@color/Red</item>
+        <item name="colorOnPrimary">@color/White</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Black</item>
+        <item name="colorSecondaryVariant">@color/Black</item>
+        <item name="colorOnSecondary">@color/Black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->\
+        <item name="android:fontFamily">@font/alfa_slab_one</item>
+    </style>
+    <style name="MyStyle">
+        <item name="android:textColor">@color/Black</item>
+        <item name="android:fontFamily">@font/alfa_slab_one</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+
+    </style>
+</resources>

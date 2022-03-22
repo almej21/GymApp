@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_video">
+
+    <FrameLayout
+        android:id="@+id/video_layout"
+        android:background="@color/Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goBack_btn"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:background="@drawable/muscle_button_background"
+        android:textColor="@color/White"
+        android:text="@string/back"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/alfa_slab_one"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@drawable/backwards_btn_icon"
+        android:paddingRight="15dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_above="@+id/description_details"
+        android:layout_marginBottom="55dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/White"
+        android:textSize="28sp"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/description_details"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description_details"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="125dp"
+        android:layout_above="@+id/goBack_btn"
+        android:layout_marginBottom="75dp"
+        android:textSize="25sp"
+        android:textColor="@color/White"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_sets_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/description_details"
+        android:layout_above="@+id/tv_reps_num"
+        android:layout_marginBottom="-6dp"
+        android:text="@string/sets"
+        android:textSize="25sp"
+        android:textColor="@color/White"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_reps_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/description_details"
+        android:textSize="25sp"
+        android:text="@string/reps"
+        android:layout_above="@+id/tv_rest_time"
+        android:layout_marginBottom="-5sp"
+        android:textColor="@color/White"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_rest_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/description_details"
+        android:textSize="25sp"
+        android:text="@string/time"
+        android:layout_marginBottom="75dp"
+        android:layout_above="@+id/goBack_btn"
+        android:textColor="@color/White"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rest_time_icon"
+        android:layout_marginBottom="85dp"
+        android:layout_above="@+id/goBack_btn"
+        android:scaleY="1.6"
+        android:scaleX="1.6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="95dp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>
